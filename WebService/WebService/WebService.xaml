@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="WebService.WebService">
+	<ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+            <StackLayout Orientation="Horizontal">
+                <Label Text="URL: "/>
+                <Entry x:Name="txtURL" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <Label Text="Body: "/>
+            <Editor x:Name="txtBody" HorizontalOptions="FillAndExpand" HeightRequest="100" BackgroundColor="Silver"/>
+            <Grid HeightRequest="150">
+                <Button Grid.Row="0" Grid.Column="0" Text="Get" Clicked="GetClicked"/>
+                <Button Grid.Row="0" Grid.Column="1" Text="Post" Clicked="PostClicked"/>
+                <Button Grid.Row="1" Grid.Column="0" Text="Put" Clicked="PutClicked"/>
+                <Button Grid.Row="1" Grid.Column="1" Text="Delete" Clicked="DeleteClicked"/>
+            </Grid>
+        </StackLayout>
+	</ContentPage.Content>
+</ContentPage>
