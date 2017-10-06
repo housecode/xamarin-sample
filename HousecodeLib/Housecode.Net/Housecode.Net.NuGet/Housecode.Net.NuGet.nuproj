@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.props" Condition="Exists('$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{16E03626-218C-47D4-A631-5AB5D0EFD8D4}</ProjectGuid>
+    <Description>Housecode library to create custom Views for Xamarin Forms.
+This Library containts following feature:
+- CardView
+- Get Screen Width
+- Get Screen Height
+- Share Intent
+- Logging
+- Rest Web Service</Description>
+    <PackageId>Housecode.Net</PackageId>
+    <PackageVersion>1.0.0</PackageVersion>
+    <Authors>Cahyo Agung</Authors>
+    <DevelopmentDependency>false</DevelopmentDependency>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Housecode.net.NuGet</RootNamespace>
+    <UsePartialTypes>false</UsePartialTypes>
+    <AssemblyName>Housecode.net.NuGet</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <Owners>Housecode.Net</Owners>
+    <Copyright>2017</Copyright>
+    <PackageTags>xamarin, forms, xamarin.forms, cardview, xamarinforms, screen, rest, service, web</PackageTags>
+    <Title>Housecode.Net</Title>
+    <NeutralLanguage>es-US</NeutralLanguage>
+    <PackageReleaseNotes>https://github.com/housecode/housecode.net</PackageReleaseNotes>
+    <Summary>Housecode library to create custom Views for Xamarin Forms.</Summary>
+    <PackageProjectUrl>https://github.com/housecode/housecode.net</PackageProjectUrl>
+    <PackageIconUrl>https://github.com/housecode/housecode.net</PackageIconUrl>
+    <PackageLicenseUrl>https://github.com/housecode/housecode.net</PackageLicenseUrl>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>..\HCNetLib.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <OutputPath>bin\Debug</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="NuGet.Build.Packaging">
+      <Version>0.1.276</Version>
+      <PrivateAssets>All</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Housecode.Net\Housecode.net.csproj">
+      <Project>{C5BD046C-6CF3-447F-B198-DB04336380FB}</Project>
+      <Name>Housecode.net</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Housecode.Net.Abstractions\Housecode.Net.Abstractions.csproj">
+      <Project>{9B2A9A42-D469-4E39-AD0F-520E9C63C586}</Project>
+      <Name>Housecode.Net.Abstractions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Housecode.Net.iOS\Housecode.net.iOS.csproj">
+      <Project>{3C1FF9F4-F01A-48E5-BEA6-BF57299A6E5D}</Project>
+      <Name>Housecode.net.iOS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Housecode.Net.Android\Housecode.net.Android.csproj">
+      <Project>{DE167874-9D23-4778-89BB-A33C9DDF0D73}</Project>
+      <Name>Housecode.net.Android</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.Common.targets" />
+  <Import Project="$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.targets" Condition="Exists('$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.targets')" />
+</Project>

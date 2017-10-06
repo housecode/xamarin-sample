@@ -1,0 +1,43 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Housecode.net", "Housecode.Net\Housecode.net.csproj", "{C5BD046C-6CF3-447F-B198-DB04336380FB}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Housecode.net.Shared", "Housecode.Net.Shared\Housecode.net.Shared.shproj", "{93B3C1DA-1114-4EA7-9D27-BF303503654D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Housecode.net.Android", "Housecode.Net.Android\Housecode.net.Android.csproj", "{DE167874-9D23-4778-89BB-A33C9DDF0D73}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Housecode.net.iOS", "Housecode.Net.iOS\Housecode.net.iOS.csproj", "{3C1FF9F4-F01A-48E5-BEA6-BF57299A6E5D}"
+EndProject
+Project("{5DD5E4FA-CB73-4610-85AB-557B54E96AA9}") = "Housecode.net.NuGet", "Housecode.Net.NuGet\Housecode.net.NuGet.nuproj", "{16E03626-218C-47D4-A631-5AB5D0EFD8D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Housecode.Net.Abstractions", "Housecode.Net.Abstractions\Housecode.Net.Abstractions.csproj", "{9B2A9A42-D469-4E39-AD0F-520E9C63C586}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C5BD046C-6CF3-447F-B198-DB04336380FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5BD046C-6CF3-447F-B198-DB04336380FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5BD046C-6CF3-447F-B198-DB04336380FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5BD046C-6CF3-447F-B198-DB04336380FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE167874-9D23-4778-89BB-A33C9DDF0D73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE167874-9D23-4778-89BB-A33C9DDF0D73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE167874-9D23-4778-89BB-A33C9DDF0D73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE167874-9D23-4778-89BB-A33C9DDF0D73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C1FF9F4-F01A-48E5-BEA6-BF57299A6E5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C1FF9F4-F01A-48E5-BEA6-BF57299A6E5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C1FF9F4-F01A-48E5-BEA6-BF57299A6E5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C1FF9F4-F01A-48E5-BEA6-BF57299A6E5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16E03626-218C-47D4-A631-5AB5D0EFD8D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16E03626-218C-47D4-A631-5AB5D0EFD8D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16E03626-218C-47D4-A631-5AB5D0EFD8D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16E03626-218C-47D4-A631-5AB5D0EFD8D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B2A9A42-D469-4E39-AD0F-520E9C63C586}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B2A9A42-D469-4E39-AD0F-520E9C63C586}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B2A9A42-D469-4E39-AD0F-520E9C63C586}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B2A9A42-D469-4E39-AD0F-520E9C63C586}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

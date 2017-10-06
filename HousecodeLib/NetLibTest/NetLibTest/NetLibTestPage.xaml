@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	xmlns:local="clr-namespace:NetLibTest"
+    xmlns:hc="clr-namespace:Housecode.Net.Controls;assembly=Housecode.Net.Controls"
+	x:Class="NetLibTest.NetLibTestPage">
+	<ContentPage.ToolbarItems>
+		<ToolbarItem Text="Get" Clicked="Handle_Clicked"/>
+	</ContentPage.ToolbarItems>
+    <ContentPage.Content>
+		<StackLayout Orientation="Vertical" BackgroundColor="White" Padding="50">
+			<hc:CardView HeightRequest="100" WidthRequest="100">
+			    <StackLayout Orientation="Vertical" BackgroundColor="White">
+					<Label Text="Welcome to Xamarin Forms!" VerticalOptions="Center" HorizontalOptions="Center" />
+                    <hc:ExtEntry Text="Hello World!"/>
+				</StackLayout>
+			</hc:CardView>
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

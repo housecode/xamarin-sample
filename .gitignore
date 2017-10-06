@@ -16,6 +16,7 @@ Makefile.in
 *.cache
 *.pidb
 *.userprefs
+*.nupkg
 *.usertasks
 config.log
 config.make
