@@ -16,6 +16,8 @@
     <PackageVersion>1.0.0</PackageVersion>
     <Authors>macbook</Authors>
     <Description>Housecode.Net.Controls</Description>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>..\HCNetControls.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
