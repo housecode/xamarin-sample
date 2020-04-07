@@ -3,5 +3,11 @@ build:
   project: ./XamarinSample.sln            
   verbosity: detailed
 
+platform:
+  - Any CPU
+
+configuration:
+  - Debug
+
 # Build worker image (VM template)
 image: Visual Studio 2019
