@@ -7,7 +7,7 @@ namespace CardView {
 			switch (Device.RuntimePlatform) {
 				case "iOS":
     				HasShadow = true;
-    				OutlineColor = Color.Transparent;
+    				BorderColor = Color.Transparent;
     				BackgroundColor = Color.Transparent;
 				break;
 			}

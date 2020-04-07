@@ -1,27 +1,28 @@
-﻿using Xamarin.Forms;
+﻿using System;
+using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
 
-namespace CardView {
-    public partial class App : Application {
-        public App() {
+namespace CardView
+{
+    public partial class App : Application
+    {
+        public App()
+        {
             InitializeComponent();
 
-			// this page shows how to create dynamic ListView height
-			// using dynamic ViewCell height
-			// NOTE: for WinPhone please implement ISetup interface
-			//       to WinPhone project as a DependencyService
-			MainPage = new NavigationPage(new ViewCellHeightPage());
+            MainPage = new MainPage();
         }
 
-        protected override void OnStart() {
-            // Handle when your app starts
+        protected override void OnStart()
+        {
         }
 
-        protected override void OnSleep() {
-            // Handle when your app sleeps
+        protected override void OnSleep()
+        {
         }
 
-        protected override void OnResume() {
-            // Handle when your app resumes
+        protected override void OnResume()
+        {
         }
     }
 }
