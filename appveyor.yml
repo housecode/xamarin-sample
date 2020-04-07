@@ -1,0 +1,7 @@
+version: 1.0.{build}
+build:  
+  project: ./XamarinSample.sln            
+  verbosity: detailed
+
+# Build worker image (VM template)
+image: Visual Studio 2019
